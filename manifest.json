@@ -1,0 +1,29 @@
+{
+  "name": "Demo",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Template for chatwork",
+  "short_name": "He he",
+  "browser_action": {
+    "default_title": "hehe",
+    "default_popup": "src/popup.html"
+  },
+  "permissions": [
+    "https://www.chatwork.com/",
+    "declarativeContent", 
+    "storage", 
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["assets/js/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.chatwork.com/*"],
+      "js": ["assets/js/jquery.min.js", "assets/js/main.js"],
+      "css": ["assets/css/main.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

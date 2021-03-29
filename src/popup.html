@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>My First Chrome Extension</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./../assets/css/main.css" />
+</head>
+<body>
+    <div class="page-content page-container" id="page-content" style="width: 400px">
+      <div class="padding">
+        <div class="row container justify-content-center">
+          <div class="col-md-12">
+            <div class="card px-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="card-title col-sm-7" id="title-template">Adding template here</div>
+                  <div class="add-items d-flex col-sm-5" id="adding-button">
+                    <button class="add btn btn-primary font-weight-bold todo-list-add-btn" id="add-template">Add</button> 
+                    <p><input type="text" id="userinput" /></p>
+                  </div>
+                </div>
+                  <div class="list-wrapper">
+                    <ul class="d-flex flex-column-reverse todo-list">
+                      <li class="selected-template">
+                        <div> 
+                          <label>
+                            For what reason would it be advisable. 
+                            <i class="input-helper"></i>
+                          </label> 
+                          <span>X</span>
+                        </div>
+                      </li>
+                      <li class="selected-template">
+                        <div> 
+                          <label>
+                            For what reason would it be advisable. 
+                            <i class="input-helper"></i>
+                          </label> 
+                          <span>X</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="./../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="./../assets/js/main.js"></script>
+<script type="text/javascript" src="./../assets/js/background.js"></script>
+</html>
